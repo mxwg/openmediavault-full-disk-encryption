@@ -44,7 +44,7 @@ extend `/etc/initramfs-tools/initramfs.conf`
 
 ```sh
 DEVICE=enp2s0
-IP=$yourIP::$routerIP:255.255.255.0:$yourHostname:eth0:off
+IP=$yourIP::$routerIP:255.255.255.0:$yourHostname:enp2s0:off
 DROPBEAR=y
 ```
 
