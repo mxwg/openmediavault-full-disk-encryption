@@ -150,6 +150,7 @@ is rather small in size, this should not take too long.
 
 ```sh
 mkdir /oldroot
+mount -t tmpfs -o size=3G none /oldroot # optional, if you only have 4GB RAM
 mount /dev/sde1 /mnt
 rsync -a /mnt/ /oldroot/
 umount /mnt
