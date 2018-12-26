@@ -214,6 +214,7 @@ mke2fs -t ext4 /dev/mapper/root
 ```sh
 mkdir /newroot
 mount /dev/mapper/root /newroot
+mkdir /newroot/boot
 mount /dev/sde1 /newroot/boot
 rsync -a /oldroot/ /newroot/
 ```
